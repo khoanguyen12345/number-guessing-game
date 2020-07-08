@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <h2 id="guesses">Guesses Remaining</h2>
+    <h2 id="guesses-remaining">5</h2>
+    <input id="user-guess" type ="number" style="font-size:25px" onfocus="this.value=''"/>
+    <div class = "buttons">
+        <input id="guessBtn" type="button" value="Guess!" onclick="guessNumber()" hidden/>
+        <button id ="resetBtn" onclick = "reset()" hidden>Reset!</button>
+    </div>
+    <div class = "startButton"><input id="startBtn" type="button" value="Start!" onclick="start()" /></div>
+    <div id = "resultArea"></div>
+    <div id = "historyArea"></div>
+    <div class = "counters">
+        <h2 id = "winCounter">Wins: 0 </h2>
+        <h2 id = "lossCounter">Losses: 0</h2>
+    </div>
+    <div id = "timerArea"></div>
+    <p class = "footer">Woooooop</p>
+    <script src = "main.js"></script>
+</body>
+</html>
